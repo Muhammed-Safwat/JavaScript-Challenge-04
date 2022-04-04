@@ -1,0 +1,92 @@
+*{
+    margin:0 ;
+    padding:0;
+    box-sizing:border-box;
+    font-family: sans-serif;
+    color: rgb(0 62 62);
+}
+.box{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: rgb(0 86 86);
+}
+.container{
+    width: 80%;
+    margin:0 auto;
+    background-color:rgb(245,245,245);
+        padding: 30px;
+    border-radius: 10px;
+    box-shadow: 1px 1px 5px #2222224d, -1px -1px 5px #2222224d;
+    text-align: center;
+}
+@media(min-width:992px){
+    .container{
+        width:50%;
+    }
+}
+
+.container input[type="text"]{
+    width:100%;
+    margin:20px 0;
+    font-size: 22px;
+    height:40px;
+    border-color:none;
+    outline:1px solid rgb(0,128,128);
+}
+.container .button{
+    width:30%;
+    font-size: 22px;
+    font-weight: bold;
+    display:flex; 
+    align-items: center;
+    justify-content: center;
+    color:rgb(0,128,128);
+    border-color:none;
+    outline:1px solid rgb(0,128,128);
+    margin: 0 auto 20px;
+    height:40px;
+}
+.container .button:hover{
+    color:white;
+    background-color:rgb(0,128,128);
+}
+#error-massage{
+    min-height: 40px;
+    font-size: 22px;
+    background-color: #ff000054;
+    color: #9e0000;
+    display: flex;
+    border: 1px solid #ff0000ad;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+    display:none;
+}
+#output-massage{
+    width: 100%;
+    background: white;
+    min-height: 40px;
+    margin: 15px;
+    display:none;
+    font-size: 32px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+@media(max-width:580px){
+    h1{
+        font-size:22px;
+    }
+    .container .button{
+        font-size:17px;
+        letter-spacing:1.4px;
+    }
+    #output-massage ,
+    #error-massage ,
+    .container input[type="text"]{
+        font-size:22px;
+    }
+}
+
